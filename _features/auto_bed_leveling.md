@@ -41,7 +41,7 @@ Unless you know you have a very flat bed, you should always use `AUTO_BED_LEVELI
 
 # First-Time Bed Leveling
 
-{% alert info %}For cartesian printers, level the bed corners using the 'paper method' before begining. With `LEVEL_BED_CORNERS` enabled you can do so via the LCD menu.{% endalert %}
+{% alert info %}For cartesian printers, level the bed corners using the 'paper method' before beginning. With `LCD_BED_TRAMMING` enabled you can do so via the LCD menu.{% endalert %}
 
 Begin with `M111 S247` for maximum logging. Before leveling the bed the machine must be homed with [`G28`](/docs/gcode/G028.html). This establishes the current position and makes sure that the carriage won't try to move outside the physical limits.
 

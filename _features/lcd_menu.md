@@ -57,7 +57,7 @@ Babystep X             || `BABYSTEPPING && BABYSTEP_XY`
 Babystep Y             || `BABYSTEPPING && BABYSTEP_XY`
 Babystep Z             || `BABYSTEPPING && !BABYSTEP_ZPROBE_OFFSET`
 Z Probe Offset         |[`M851 Z`](/docs/gcode/M851.html)| `BABYSTEP_ZPROBE_OFFSET`
-**Change Filament >>** |[`M600`](/docs/gcode/M600.html)| `FILAMENT_CHANGE_FEATURE` and not too cold
+**Change Filament >>** |[`M600`](/docs/gcode/M600.html)| `ADVANCED_PAUSE_FEATURE` and not too cold
 
 # Prepare
 The Prepare menu is only available when the machine is not printing.
@@ -74,7 +74,7 @@ Auto Home Z            |[`G28 Z`](/docs/gcode/G028.html)| `INDIVIDUAL_AXIS_HOMIN
 [Unified Bed Leveling >>](#unified-bed-leveling)|[`G29`](/docs/gcode/G029-ubl.html)| `UNIFIED_BED_LEVELING`
 Set Home Offsets       |[`M428`](/docs/gcode/M428.html)| `!DELTA && !NO_WORKSPACE_OFFSETS`
 Disable Steppers       |[`M18`](/docs/gcode/M018.html)|
-Change Filament        |[`M600`](/docs/gcode/M600.html)| `FILAMENT_CHANGE_FEATURE` and not too cold
+Change Filament        |[`M600`](/docs/gcode/M600.html)| `ADVANCED_PAUSE_FEATURE` and not too cold
 Cooldown               || `TEMP_SENSOR_0` (shown if currently heating)
 **[Preheat PLA >>](#preheat-pla)** || `TEMP_SENSOR_0`
 **[Preheat ABS >>](#preheat-abs)** || `TEMP_SENSOR_0`
@@ -176,7 +176,7 @@ Item|Description|Requirements
 **[Filament >>](#filament)** ||
 **LCD Contrast >>**    || `HAS_LCD_CONTRAST`
 **Retract >>**         || `FWRETRACT`
-**Drive Strength >>**  || `DAC_STEPPER_CURRENT`
+**Drive Strength >>**  || `HAS_MOTOR_CURRENT_DAC` or `HAS_MOTOR_CURRENT_PWM`
 **[BLTouch >>](#bltouch)** || `BLTOUCH`
 Store settings         || `EEPROM_SETTINGS`
 Load settings          || `EEPROM_SETTINGS`

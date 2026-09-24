@@ -151,7 +151,7 @@ parameters:
     description: |
       **Automatic Probing** invalidates the mesh and continues automatic probing using the probe.
       - In most cases the probe can't reach all areas that the nozzle can due to the offsets specified by `X_PROBE_OFFSET_FROM_EXTRUDER` and `Y_PROBE_OFFSET_FROM_EXTRUDER`.
-        Deltabots can only probe within the area where `DELTA_PROBEABLE_RADIUS` and `DELTA_PRINTABLE_RADIUS` overlap.
+        Deltabots can only probe within the area where `DELTA_PROBEABLE_RADIUS` and `PRINTABLE_RADIUS` overlap.
       - Unreachable points can be filled in later with the `P2` and `P3` phases.
       - Use `C` to leave the previous mesh intact and automatically probe needed points. This allows you to invalidate parts of the mesh but still use Automatic Probing.
       - The `X` and `Y` parameters prioritize where to try and measure points. If omitted, the current probe position is used.

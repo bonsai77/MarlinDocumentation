@@ -188,7 +188,7 @@ The automated mesh boundary settings assume that the printable area is centered 
 #define MESH_MAX_Y (Y_BED_SIZE - (UBL_MESH_INSET))
 ```
 
-For delta printers the situation is similar. It is necessary to have grid points defined that can be filled covering the entirety of `DELTA_PRINTABLE_RADIUS`, but there should also be a 'border' of valid mesh points that lie just outside the printable radius. This ensures that every grid cell within the printable radius will have all four of its corners defined.
+For delta printers the situation is similar. It is necessary to have grid points defined that can be filled covering the entirety of `PRINTABLE_RADIUS`, but there should also be a 'border' of valid mesh points that lie just outside the printable radius. This ensures that every grid cell within the printable radius will have all four of its corners defined.
 
 Regardless of the manner in which bed size and printable radius are defined, make sure your mesh grid is defined so that a full circle of 'extra' mesh points lie outside of the printable radius.
 
